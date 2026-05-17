@@ -1,10 +1,24 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "pacelab-workout-creator",
-  "description": "Create and share AI-generated interval workouts with Pacelab Intervals. Supports Tabata, AMRAP, EMOM, Circuit, and more — generates a shareable link you can open directly in the app.",
   "version": "1.0.0",
+  "description": "Generate structured interval workouts with Claude — Tabata, AMRAP, EMOM, Circuit, Rounds, and more. Returns a shareable link that opens directly in the Pacelab Intervals iOS or Android app.",
   "author": {
-    "name": "Pacelab"
+    "name": "Pacelab",
+    "email": "support@pacelabintervals.com",
+    "url": "https://pacelabintervals.com"
   },
   "homepage": "https://pacelabintervals.com",
-  "license": "MIT"
+  "repository": "https://github.com/StringoStarr/pacelab-workout-creator",
+  "license": "MIT",
+  "keywords": [
+    "fitness",
+    "workout",
+    "interval-training",
+    "hiit",
+    "tabata",
+    "amrap",
+    "emom",
+    "pacelab"
+  ]
 }
