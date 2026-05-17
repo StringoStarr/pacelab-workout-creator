@@ -10,8 +10,8 @@ Add this to your `claude_desktop_config.json`:
 {
   "mcpServers": {
     "pacelab-workout-creator": {
-      "type": "http",
-      "url": "https://pacelabintervals.com/mcp"
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://pacelabintervals.com/mcp"]
     }
   }
 }
