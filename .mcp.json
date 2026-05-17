@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pacelab-workout-creator": {
+      "type": "http",
+      "url": "https://pacelabintervals.com/mcp"
+    }
+  }
+}
