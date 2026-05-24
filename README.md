@@ -2,7 +2,7 @@
 
 Generate structured interval workouts with any AI assistant and import them directly into [Pacelab Intervals](https://pacelabintervals.com). Describe your goal, get a complete workout with blocks and exercises, and open it in the app with one tap.
 
-Works with **Claude Desktop, Cursor, Windsurf, Gemini CLI**, and any other MCP-compatible client.
+Works with **Claude Desktop, ChatGPT Desktop, Cursor, Windsurf, Gemini CLI**, and any other MCP-compatible client.
 
 ## Install
 
@@ -53,6 +53,13 @@ Edit `~/.gemini/settings.json` and add:
   }
 }
 ```
+
+### ChatGPT Desktop (Plus/Pro)
+
+1. Open ChatGPT Desktop → **Settings → Beta features** → enable **Developer Mode**
+2. Go to **Settings → MCP Servers** → **Add Server**
+3. Enter the server URL: `https://pacelabintervals.com/mcp`
+4. Save — the Pacelab tools will appear in your next conversation
 
 ## What you can do
 
