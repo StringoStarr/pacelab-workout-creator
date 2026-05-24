@@ -1,10 +1,12 @@
-# Pacelab Workout Creator — Claude Plugin
+# Pacelab Workout Creator — MCP Server
 
-Generate structured interval workouts with Claude and import them directly into [Pacelab Intervals](https://pacelabintervals.com). Describe your goal, get a complete workout with blocks and exercises, and open it in the app with one tap.
+Generate structured interval workouts with any AI assistant and import them directly into [Pacelab Intervals](https://pacelabintervals.com). Describe your goal, get a complete workout with blocks and exercises, and open it in the app with one tap.
+
+Works with **Claude Desktop, Cursor, Windsurf, Gemini CLI**, and any other MCP-compatible client.
 
 ## Install
 
-Add this to your `claude_desktop_config.json`:
+Add this to your AI client's MCP config file:
 
 ```json
 {
@@ -17,7 +19,40 @@ Add this to your `claude_desktop_config.json`:
 }
 ```
 
-Restart Claude Desktop. The Pacelab tools will appear in the toolbar.
+**Requirements:** Node.js installed.
+
+### Claude Desktop
+
+Go to **Settings → Developer → Edit Config**, paste the config above, save, then fully quit Claude (Cmd+Q on Mac) and reopen it.
+
+Config file location:
+- macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
+
+### Cursor
+
+Go to **Settings → MCP**, click **Add new MCP server**, and paste the config above.
+
+Or edit `~/.cursor/mcp.json` directly.
+
+### Windsurf
+
+Edit `~/.codeium/windsurf/mcp_config.json` and add the config above.
+
+### Gemini CLI
+
+Edit `~/.gemini/settings.json` and add:
+
+```json
+{
+  "mcpServers": {
+    "pacelab-workout-creator": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://pacelabintervals.com/mcp"]
+    }
+  }
+}
+```
 
 ## What you can do
 
