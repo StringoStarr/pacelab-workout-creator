@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "pacelab-workout-creator",
-  "version": "1.0.0",
-  "description": "Generate structured interval workouts with Claude — Tabata, AMRAP, EMOM, Circuit, Rounds, and more. Returns a shareable link that opens directly in the Pacelab Intervals iOS or Android app.",
+  "version": "1.1.0",
+  "description": "Design interval workouts in conversation and have them saved straight to your Pacelab Intervals library on iOS or Android — Tabata, AMRAP, EMOM, Circuit, Rounds, For Time. Reads your training history to program against it, schedules sessions to your calendar, and runs shareable challenges with leaderboards. Requires a free Pacelab account.",
   "author": {
     "name": "Pacelab",
     "email": "support@pacelabintervals.com",
@@ -19,6 +19,8 @@
     "tabata",
     "amrap",
     "emom",
-    "pacelab"
+    "pacelab",
+    "training-log",
+    "workout-planner"
   ]
 }

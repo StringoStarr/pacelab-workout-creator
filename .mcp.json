@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "pacelab-workout-creator": {
-      "command": "npx",
-      "args": ["-y", "mcp-remote", "https://pacelabintervals.com/mcp"]
+      "type": "http",
+      "url": "https://pacelabintervals.com/mcp"
     }
   }
 }
